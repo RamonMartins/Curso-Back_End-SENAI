@@ -1,0 +1,54 @@
+Passo a passo criar Projeto com a pasta "apps"
+
+1- Crie uma pasta usando o Windows Explorer ou o gerenciador de pastas do seu Sistema Operacional. Abra o Visual Studio, clique em "File", depois clique em "Open Folder", navegue até a pasta que você criou e selecione ela. Após isso o seu projeto será todo dentro desta pasta, agora abra o terminal e digite o comando abaixo para criar um Ambiente Virtual onde o seu projeto vai rodar:
+	==> py -m virtualenv venv
+
+2- Executar o Ambiente Virtual passando o código:
+	- Usando o PowerShell:
+	==> venv/Scripts/activate
+	- Usando o CMD:
+	==> venv\Scripts\activate
+
+3- Instalar o Django no Ambiente Virtual:
+	==> py -m pip install django
+
+4- Iniciar um novo projeto:
+	==> django-admin startproject nome_do_projeto .
+	
+	(no final do comando tem um " ." [espaço+ponto], ele serve para nao criar o projeto dentro de uma nova pasta, e sim na raiz da pasta que você está)
+
+5- Criar um app no projeto
+	==> py manage.py startapp nome_do_app
+	
+	OBS: Caso vc queira criar um app dentro de uma pasta chamada "apps" para englobar todos os apps dentro dela, siga estes passos:
+		1- Criar uma pasta chamada "apps":
+			==> mkdir nome_da_pasta
+		2- Navegar para esta pasta:
+			==> cd nome_da_pasta
+		3- Agora passa o comando de criar o app:
+			==> django-admin startapp nome_do_app
+		4- Por fim voltar o terminal para a pasta principal do projeto:
+			==> cd..
+
+6- Registrar o app criado no Projeto:
+	Navegue até a pasta do projeto que foi criado quando você passou o comando startproject, procure pelo arquivo "settings.py" e dentro dele busque a lista "INSTALLED_APPS". Nela você vai incluir o nome do app entre aspas simples e colocar uma vírgula no final, ficando assim >>> 'ListaTarefas', <<<.
+	
+	OBS: Caso você tenha criado o app dentro de uma pasta "apps", antes no mome do app você deve colocar o nome da pasta e um ponto(.) separando o nome da pasta e o nome do app, ficando assim >>> 'apps.ListaTarefas', <<<. Outra alteração que você precisa fazer também é ir até a pasta desse app e abrir o arquivo "apps.py", dentro dele procure pela variável "name", no momento ela estará assim >>> name = 'ListaTarefas' <<<, você deve acrescentar o nome da pasta e o ponto antes do nome do app assim como fez no settings.py, ficando assim >>> name = 'apps.ListaTarefas' <<<.
+
+7- Fazer as alterações no arquivo "models.py" dentro da pasta do app. Não esquecer de definir o método __str__ para ter o retorno do nome do objeto no Django-Admin: 
+
+	OBS: SEEEEEEEEEMPRE QUE ALTERAR O ARQUIVOS "MODELS", REALIZAR O "makemigrations" e o "migrate" e posteriormente o "runserver" respectivamente.
+
+8- Registrar os models no arquivo "admin.py" de cada app criado.
+
+9- Criar os arquivos de migrações de alterações no banco de dados:
+	==> py manage.py makemigrations
+
+10- Para aplicar as migrações geradas e realizar as alterações no banco de dados digite:
+	==> py manage.py migrate
+
+11- Criar um SuperUsuário para acessar o ADM do Django:
+	==> py manage.py createsuperuser
+
+12 - Subir o servidor e acessar o admin:
+	==> py manage.py runserver
