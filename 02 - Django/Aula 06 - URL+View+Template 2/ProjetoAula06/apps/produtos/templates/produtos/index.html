@@ -1,0 +1,12 @@
+<HTML>
+    <BODY>
+        <P>
+            Minha lista de Produtos:
+        </P>
+        <ul>
+            {% for produto in produtos %}
+                <li>{{ produto.nome_produto }} - R$ {{ produto.valor_produto }}</li>
+            {% endfor %}
+        </ul>
+    </BODY>
+</HTML>
