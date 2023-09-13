@@ -1,0 +1,18 @@
+<HTML>
+    <BODY>
+        <P>
+            Autores cadastrados:
+        </P>
+        <ul>
+            {% for x in nome_autores %}
+                <li>
+                    {{ x.nome_autor }}
+                    </br>
+                    {{ x.idade_autor }}
+                    </br>
+                    <img src="{{x.foto_autor.url}}" width="250" height="250" />
+                </li>
+            {% endfor %}
+        </ul>
+    </BODY>
+</HTML>

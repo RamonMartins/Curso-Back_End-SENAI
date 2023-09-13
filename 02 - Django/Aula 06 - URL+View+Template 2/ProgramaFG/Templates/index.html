@@ -7,7 +7,7 @@
         <UL>
             {% for x in tarefasArrey %}
             <LI>
-                {{ x }}
+                {{ x.titulo_tarefa }}, {{ x.descricao_tarefa }}, {{ x.status_tarefa }}
             </LI>
             {% endfor %}
         </UL>

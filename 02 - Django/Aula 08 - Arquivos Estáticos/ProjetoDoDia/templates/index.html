@@ -1,0 +1,16 @@
+<HTML>
+    <BODY>
+        <P>
+            Autores da Biblioteca:
+        </P>
+        <ul>
+            {% for autor in autores %}
+                <li>
+                    {{ autor.nome_autor }}
+
+                    <img src="{{ autor.foto_autor.url }}" width="300">
+                </li>
+            {% endfor %}
+        </ul>
+    </BODY>
+</HTML>

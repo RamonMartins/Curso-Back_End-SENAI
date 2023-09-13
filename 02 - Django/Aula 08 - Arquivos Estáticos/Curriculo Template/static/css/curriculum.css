@@ -1,0 +1,145 @@
+/**{font-family: "Helvetica"}*/
+
+body, html{margin: 0;background: #f5f5f5;color: #4A5568;font-family: 'Lexend Deca', sans-serif;}
+
+/*.border{border: 1px solid black}*/
+
+.navbar{width: 900px;margin: 0 auto;padding: 15px;box-sizing: border-box;}
+.navbar .bi-circle-half{cursor: pointer;}
+
+.curriculum{border-radius: 5px;overflow: hidden;width: 900px;margin: 0 auto;background: white;box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);padding-bottom: 50px;}
+.curriculum .content{width: 100%;}
+.curriculum .content .header{background: #333333;color: white;width: 100%;display: flex;align-items: center;}
+.curriculum .content .header .user_profile_pic{width: 50mm;}
+.curriculum .content .header .user_profile_pic .profile_pic{}
+.curriculum .content .header .user_profile_pic .profile_pic img{width: 100%;margin: 0;display: inherit;}
+.curriculum .content .header .user_info{width: 130mm;}
+.curriculum .content .header .user_info .name{font-weight: bold;display: block;font-size: 25px;color: #50a9ff;margin: 0;margin-bottom: 5px;line-height: 1;}
+.curriculum .content .header .user_info .description{display: block;font-size: 18px;font-weight: normal;margin: 0;margin-bottom: 10px;}
+.curriculum .content .header .user_info .mail{display: block;color: rgba(255, 255, 255, .6);margin-bottom: 5px;font-size: 14px}
+.curriculum .content .header .user_info .mail i{margin-right: 5px;}
+.curriculum .content .header .user_info .contact i{margin-right: 5px;}
+.curriculum .content .header .user_info .contact {display: block;color: rgba(255, 255, 255, .6);font-size: 14px}
+.curriculum .content .header .user_info .social{}
+.curriculum .content .header .social_info{padding: 0;}
+.curriculum .content .header .social_info .social span a{font-size: 13px;display: block;text-decoration: none;color: white;color: rgba(255, 255, 255, .6);margin-bottom: 6px;display: flex;align-items: center;}
+.curriculum .content .header .social_info .social span a i{margin-right: 5px;font-size: 15px;}
+
+.curriculum .body_content{padding: 5mm 7mm;padding-bottom: 0;margin-bottom: 15px;}
+.curriculum .body_content .title{color: #434E5E;color: #2563eb;padding-bottom: 7px;border-bottom: 1px solid #d2d2d2;font-size: 16px;font-weight: bold;margin: 0;}
+.curriculum .body_content .text{color: #4A5568;font-size: 14px;margin: 7px 0;}
+
+.curriculum .body_flex{padding: 0 7mm;display: flex;justify-content: space-between;}
+.curriculum .body_flex .experience-left{width: 150mm;/* float: left; */position: relative;}
+.curriculum .body_flex .experience-left .title{color: #434E5E;color: #2563eb;padding-bottom: 10px;border-bottom: 1px solid #d2d2d2;font-size: 15px;font-weight: bold;}
+.curriculum .body_flex .experience-left .text{color: #4A5568;font-size: 14px;}
+
+.curriculum .body_flex .experience-left .timeline{position: relative;margin-top: 3mm;}
+
+.curriculum .body_flex .experience-left .timeline:before{content: '';position: absolute;width: 3px;height: 100%;background: #979ea9;left: 6px;top: 0;}
+.curriculum .body_flex .experience-left .timeline .experience-item{}
+.curriculum .body_flex .experience-left .timeline .experience-item .title-content{display: flex; align-items: center; justify-content: space-between;}
+.curriculum .body_flex .experience-left .timeline .experience-item .text-content{margin-left: 8mm}
+.curriculum .body_flex .experience-left .timeline .experience-item .experience-title{text-align: left;padding: 0mm 8mm;position: relative;font-weight: 600;padding-bottom: 5px;color: #4485e3;}
+.curriculum .body_flex .experience-left .timeline .experience-item .experience-title:before{content: '';width: 7px;height: 7px;display: block;border-radius: 50px;border: 4px solid #4A5568;position: absolute;left: 0;background: white;}
+.curriculum .body_flex .experience-left .timeline .experience-item .company{text-align: right;font-size: 14px;    padding-bottom: 2mm;}
+.curriculum .body_flex .experience-left .timeline .experience-item .date{color: #97a1b0;font-size: 14px;padding-bottom: 7px;}
+.curriculum .body_flex .experience-left .timeline .experience-item .text{}
+.curriculum .body_flex .experience-left .timeline .experience-item .item-title{font-weight: 600;padding-bottom: 7px;font-size: 14px;color: #333333;}
+.curriculum .body_flex .experience-left .timeline .experience-item .text{padding-bottom: 7px;line-height: 1.2;}
+.curriculum .body_flex .experience-left .timeline .experience-item .text .tag{background: #4485e3;color: white;padding: 5px 7px;display: inline-block;margin-bottom: 5px;border-radius: 5px;font-size: 11px;margin-right: 2px;}
+.curriculum .body_flex .experience-left .timeline .experience-item .text ul{margin: 0;}
+.curriculum .body_flex .experience-left .timeline .experience-item .text ul li{margin-bottom: 3px;}
+
+.curriculum .body_flex .experience-right{width: 60mm;/* float: right; */}
+.curriculum .body_flex .experience-right .title{color: #434E5E;color: #2563eb;padding-bottom: 5px;border-bottom: 1px solid #d2d2d2;font-size: 15px;font-weight: bold;margin: 0;margin-top: 7px;}
+.curriculum .body_flex .experience-right .text{color: #4A5568;font-size: 13px;}
+.curriculum .body_flex .experience-right .experience-item .experience-title{text-align: left;padding: 2mm 0mm;position: relative;font-weight: 600;padding-bottom: 7px;color: #4485e3;margin: 0;font-size: 16px;padding-bottom: 5px;}
+.curriculum .body_flex .experience-right .experience-item .items{ margin-top: 5px;}
+.curriculum .body_flex .experience-right .experience-item .items .item-skill{margin-bottom: 4px;}
+.curriculum .body_flex .experience-right .experience-item .items .item-skill .experience-time{width: 100%;display: flex;justify-content: space-between;font-size: 10px;margin-bottom: 10px;position: relative;top: -5px;}
+.curriculum .body_flex .experience-right .experience-item .items .item-skill .experience-time span{position: relative;}
+.curriculum .body_flex .experience-right .experience-item .items .item-skill .experience-time span:before{content: '';position: absolute;width: 2px;height: 6px;background: #4485e3;bottom: -8px;left: 2px;}
+.curriculum .body_flex .experience-right .experience-item .items .item-skill .experience-time .xp{position: absolute;right: 0;top: -21px;}
+.curriculum .body_flex .experience-right .experience-item .items .text{margin-bottom: 4px;display: block;}
+.curriculum .body_flex .experience-right .experience-item .items .progress{width: 100%;height: 6px;background: #e9ecef;position: relative;border-radius: 5px;overflow: hidden;}
+.curriculum .body_flex .experience-right .experience-item .items .progress .percentage{position: absolute;height: 100%;background: #434E5E;background: #2563eb;border-radius: 5px;}
+.curriculum .body_flex .experience-right .experience-item .text .tag{background: #e9ecef;color: #4A5568;padding: 5px 7px;display: inline-block;margin-bottom: 5px;border-radius: 5px;font-size: 12px;margin-right: 2px;}
+
+.curriculum .body_flex .experience-right .experience-item .items .education_item{margin-top: 7px;}
+.curriculum .body_flex .experience-right .experience-item .items .education_item .item{color: #4485e3;display: block;font-size: 14px;line-height: 1;}
+.curriculum .body_flex .experience-right .experience-item .items .education_item .org{font-size: 14px;display: block;color: #333333;}
+.curriculum .body_flex .experience-right .experience-item .items .education_item .time{font-size: 14px;color: #97a1b0;line-height: 1;display: block;}
+
+.curriculum .body_flex .experience-right .experience-item .items .lang_item{margin-top: 0;font-size: 14px;}
+.curriculum .body_flex .experience-right .experience-item .items .lang_item .item{color: #4485e3;}
+.curriculum .body_flex .experience-right .experience-item .items .lang_item .item span{color: #333333;}
+
+footer{text-align: center;padding: 60px 0;}
+footer span{font-size: 14px;}
+
+/* theme-black  */
+
+.curriculum.theme-black{}
+.curriculum.theme-black .header span{color: white!important}
+.curriculum.theme-black .header a{color: white!important}
+.curriculum.theme-black .header h1{color: white!important}
+
+.curriculum.theme-black .body_content .title{color: black!important}
+.curriculum.theme-black .body_content .text{color: black!important}
+
+.curriculum.theme-black .body_flex .title{color: black!important}
+.curriculum.theme-black .body_flex .text{color: black!important}
+.curriculum.theme-black .body_flex .experience-title{color: black!important}
+.curriculum.theme-black .body_flex .experience-title:before{border: 4px solid #333333!important}
+.curriculum.theme-black .body_flex .timeline:before{background: #cacaca!important}
+.curriculum.theme-black .body_flex .timeline .tag{background: #333333!important;}
+.curriculum.theme-black .body_flex .progress .percentage{background: #333333!important;}
+.curriculum.theme-black .body_flex .experience-right .tag{color: black!important;}
+
+.curriculum.theme-black .body_flex .experience-right .item{color: black!important}
+.curriculum.theme-black .body_flex .experience-right .experience-time span:before{content: '';background: black!important}
+
+/* animations  */
+
+
+@media (max-width: 900px){
+    .navbar{width: 100%}
+    .curriculum{width: 100%}
+
+    .curriculum .content .header{flex-wrap: wrap;}
+    .curriculum .content .header .user_profile_pic{width: 100%}
+    .curriculum .content .header .user_profile_pic .profile_pic img{width: 50%;margin: 0 auto}
+    .curriculum .content .header .user_info{width: 100%;text-align: center;}
+    .curriculum .content .header .user_info .name{font-size: 22px}
+    .curriculum .content .header .user_info .description{font-size: 16px;}
+    .curriculum .content .header .social_info{width: 100%;text-align: center;margin: 15px 0;}
+    .curriculum .content .header .social_info .social{}
+    .curriculum .content .header .social_info .social span{display: inline-block;margin-right: 10px;}
+    .curriculum .body_flex {flex-wrap: wrap;}
+    .curriculum .body_flex .experience-left{width: 100%}
+    .curriculum .body_flex .experience-right{width: 100%; margin-top: 20px}
+}
+
+@media print {
+    body, html{background: white!important;}
+    
+    .pagebreak { page-break-before: always; height: 20px}
+
+    .navbar{display: none}
+    .curriculum{width: 100%;background: white;box-shadow:none!important;padding-bottom: 0}
+    .curriculum .content .header{flex-wrap: unset!important;}
+
+    .curriculum .content .header .user_profile_pic{width: 50mm!important;}
+    .curriculum .content .header .user_profile_pic .profile_pic img{width: 100%;margin: 0}
+    .curriculum .content .header .user_info{width: 120mm!important;text-align: left;}
+    .curriculum .content .header .social_info{width: 70mm;text-align: left;}
+
+    .curriculum .body_flex {flex-wrap: unset;justify-content: space-between;}
+
+    .curriculum .body_flex .experience-left{width: 65%}
+    .curriculum .body_flex .experience-right{width: 30%}
+    .curriculum .body_flex .experience-right .title.n-padding{margin-top: -15px}
+
+    footer{display: none}
+}

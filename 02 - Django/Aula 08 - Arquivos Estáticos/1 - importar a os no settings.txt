@@ -1,0 +1,20 @@
+1 - importar a os no settings:
+import os
+
+2 - configurar a pasta no settings:
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+MEDIA_URL = "/media/"
+
+3 - no arquivo urls do projeto, importar as seguintes bibliotecas:
+from django.conf import settings
+from django.conf.urls.static import static
+
+4 - ainda no urls do projeto, inserir o codigo abaixo:
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+5 - usar o models ImageField:
+models.ImageField(upload_to="foto_perfil/")
+
+6 - instalar o Pillow:
+py -m pip install Pillow

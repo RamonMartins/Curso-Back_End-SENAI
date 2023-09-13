@@ -1,10 +1,48 @@
+<!DOCTYPE html>
 <html>
+    <head>
+        <title>
+            Lista de Tarefas
+        </title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                <!--background-color: #f4f4f4;-->
+                margin: 0;
+                padding: 0;
+            }
+            h1 {
+                color: #333;
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+            p {
+                color: #666;
+                font-size: 18px;
+            }
+            ul {
+                <!--list-style-type: none;-->
+                padding: 0;
+            }
+            li {
+                color: #444;
+                font-size: 16px;
+                margin-bottom: 5px;
+            }
+        </style>
+    </head>
     <body>
-        <h1>Olá Mundo!!!</h1>
-        <ul>
-            {% for tarefa in tarefas %}
-                <li>{{ tarefa }}</li>
-            {% endfor %}
-        </ul>
+        <h1>Lista de Tarefas</h1>
+        <p>
+            Segue a lista:
+        </p>
+        <div>
+            <ol>
+                {% for tarefa in tarefas %}
+                    <li>{{ tarefa }}</li>
+                {% endfor %}
+            </ol>
+        </div>
     </body>
 </html>
