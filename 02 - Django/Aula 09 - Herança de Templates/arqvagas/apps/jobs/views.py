@@ -1,8 +1,21 @@
 from django.shortcuts import render
 
+from .models import Job
+
 # Create your views here.
 def jobs(request):
+    jobs = Job.objects.all()
+
     dados = {
-        "job":"Vaga de lutador de HTML"
+        "jobs": jobs
         }
     return render(request, "jobs.html", dados)
+
+def job(request, id):
+    job = Job.objects.get(id=id)
+
+    dados = {
+        "job": job
+    }
+
+    return render(request, "vaga.html", dados)

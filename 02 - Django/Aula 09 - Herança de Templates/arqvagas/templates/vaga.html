@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block titulo %}Vaga{% endblock %}
+
+{% block titulo_body %}
+{{job.nome}}
+{% endblock %}
+
+{% block conteudo %}
+
+<br>
+<br>
+<a href="{% url 'pagina_jobs' %}"><- Voltar</a>
+
+<p>Detalhes da vaga:</p>
+
+<table>
+    <tr>
+      <td>Nome da vaga</td>
+      <td>Empresa</td>
+      <td>Salário</td>
+      <td>Cidade</td>
+      <td>Quantidade de vagas</td>
+      <td>Ações</td>
+    </tr>
+
+    <tr>
+      <td>{{ job.nome }}</td>
+      <td>{{ job.empresa }}</td>
+      <td>R$ {{ job.salario }}</td>
+      <td>{{ job.cidade }}</td>
+      <td>{{ job.qtd_jobs }}</td>
+      <td><button>Se candidatar</button></td>
+    </tr>
+
+  </table>
+
+{% endblock %}

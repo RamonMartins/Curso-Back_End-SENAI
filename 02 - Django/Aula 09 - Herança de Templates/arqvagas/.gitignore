@@ -1,0 +1,5 @@
+# Ignorar a máquina virtual
+venv
+
+# Ignorar o Banco de Dados
+*.sqlite3

@@ -1,6 +1,6 @@
 body {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .bgTeste {
@@ -10,3 +10,8 @@ body {
 .bgBlog {
     background-color: brown;
 }
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }

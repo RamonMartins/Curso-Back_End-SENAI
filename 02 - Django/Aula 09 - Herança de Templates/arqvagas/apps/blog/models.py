@@ -1,3 +1,8 @@
 from django.db import models
 
-# Create your models here.
+class Noticia(models.Model):
+    titulo_noticia = models.CharField(max_length=200)
+    conteudo_noticia = models.TextField()
+
+    def __str__(self):
+        return self.titulo_noticia

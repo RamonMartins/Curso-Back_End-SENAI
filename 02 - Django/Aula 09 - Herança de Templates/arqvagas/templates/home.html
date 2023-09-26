@@ -2,4 +2,14 @@
 
 {% block titulo %}Home Page{% endblock %}
 
-{% block titulo_body %}Arq - Home Page{% endblock %}
+{% block titulo_body %}
+    {{ configuracao.slogan }}
+{% endblock %}
+
+{% block conteudo %}
+  <ul>
+    <li>{{ configuracao.nome_empresa }}</li>
+    <li>{{ configuracao.telefone }}</li>
+    <li>{{ configuracao.email }}</li>
+  </ul>
+{% endblock %}

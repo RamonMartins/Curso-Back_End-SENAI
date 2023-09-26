@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block titulo %}Blog{% endblock %}
+
+{% block titulo_body %}Arq - Blog{% endblock %}
+
+{% block conteudo %}
+
+        <div width="40%" height="auto">
+            <h2>{{noticia.titulo_noticia}}</h2>
+            <p>{{noticia.conteudo_noticia}}</p>
+        </div>
+
+{% endblock %}

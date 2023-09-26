@@ -44,15 +44,14 @@ APPS_DJANGO = [
 APPS_PROPRIETARIO = [
     'apps.core',
     'apps.jobs',
-    'apps.candidate',
     'apps.blog'
 ]
 
 APP_TERCEIROS = [
-
+    'grappelli',
 ]
 
-INSTALLED_APPS = APPS_DJANGO + APPS_PROPRIETARIO + APP_TERCEIROS
+INSTALLED_APPS = APP_TERCEIROS + APPS_DJANGO + APPS_PROPRIETARIO
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

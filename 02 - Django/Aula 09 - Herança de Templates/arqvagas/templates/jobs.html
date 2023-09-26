@@ -3,3 +3,30 @@
 {% block titulo %}Vagas{% endblock %}
 
 {% block titulo_body %}Arq - Vagas{% endblock %}
+
+{% block conteudo %}
+<p>Todas as vagas:</p>
+
+<table>
+    <tr>
+      <td>Nome da vaga</td>
+      <td>Empresa</td>
+      <td>Salário</td>
+      <td>Cidade</td>
+      <td>Quantidade de vagas</td>
+      <td>Ações</td>
+    </tr>
+
+    {% for job in jobs %}
+    <tr>
+      <td>{{ job.nome }}</td>
+      <td>{{ job.empresa }}</td>
+      <td>R$ {{ job.salario }}</td>
+      <td>{{ job.cidade }}</td>
+      <td>{{ job.qtd_jobs }}</td>
+      <td><a href="{% url 'ver_job' job.id %}">Ver vaga</a></td>
+    </tr>
+    {% endfor %}
+
+  </table>
+  {% endblock %}
